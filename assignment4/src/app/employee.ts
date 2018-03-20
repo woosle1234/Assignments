@@ -16,6 +16,6 @@ export class employee{
         __v:number;
     };
     HireDate:string;
-    SalaryBouns:number;
+    SalaryBonus:number;
     __v:number;
 }

@@ -15,14 +15,13 @@ export class ProjectsComponent implements OnInit {
   private proj: project[];
 
   constructor(private m: DataManagerService, private router: Router,private http: HttpClient, private dp: DatePipe) {
-    this.m.saveProj(this.proj);
+
   }
 
   ngOnInit() {
     this.http.get<project[]>('https://evening-eyrie-59881.herokuapp.com/projects').subscribe(res=>{
       this.proj=res;
     });
-    this.m.saveProj(this.proj);
   }
 
 }

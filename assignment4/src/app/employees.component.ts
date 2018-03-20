@@ -14,8 +14,7 @@ import { HttpClient } from '@angular/common/http';
 export class EmployeesComponent implements OnInit {
   private emp: employee[];
 
-  constructor(private m: DataManagerService, private router: Router,private http: HttpClient) {
-    this.m.saveEmp(this.emp);
+  constructor(private m: DataManagerService,private router: Router,private http: HttpClient) {
   }
 
   ngOnInit() {
@@ -23,7 +22,6 @@ export class EmployeesComponent implements OnInit {
       this.emp = data;
       console.log(this.emp);
     });
-    this.m.saveEmp(this.emp);
   }
 
   select(em: employee){

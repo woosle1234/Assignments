@@ -13,20 +13,14 @@ export class DataManagerService {
   private proj: project[];
 
   constructor(private http: HttpClient) { 
-
-  }
-  
-  saveEmp(e: employee[]){
-    this.emp=e;
-  }
-
-  saveProj(p: project[]){
-    this.proj=p;
   }
 
   getEmp(id: string){
-    return this.emp;
+    let em: employee;
+    return em;
   }
+
+
 
   getEmployees(){
     return this.emp;
@@ -35,5 +29,6 @@ export class DataManagerService {
   getProjects(){
     return this.proj;
   }
+  
 
 }
