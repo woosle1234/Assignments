@@ -1,0 +1,10 @@
+<h1>Create new customer</h1>
+<p>First name: <input class="form-control" [(ngModel)]="selectedCust.firstname"></p>
+<p>First name: <input class="form-control" [(ngModel)]="selectedCust.firstname"></p>
+<p>First name: <input class="form-control" [(ngModel)]="selectedCust.firstname"></p>
+<p>First name: <input class="form-control" [(ngModel)]="selectedCust.firstname"></p>
+<p>First name: <input class="form-control" [(ngModel)]="selectedCust.firstname"></p>
+<p>First name: <input class="form-control" [(ngModel)]="selectedCust.firstname"></p>
+<button class="btn btn-default" (click)='this.router.navigate(["/customers"])'>Back to list</button>
+<button class="btn btn-default" (click)='this.router.navigate(["/customerdetails",selectedCust.id])'>Back to list</button>
+<button class="btn btn-default" (click)='editCustomer()'>Create new cutomer</button>

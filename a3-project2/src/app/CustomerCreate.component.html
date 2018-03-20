@@ -1,0 +1,10 @@
+<h1>Create new customer</h1>
+<p>First name: <input class="form-control" [(ngModel)]="selectedCust.first_name"></p>
+<p>Last name: <input class="form-control" [(ngModel)]="selectedCust.last_name"></p>
+<p>Email: <input class="form-control" [(ngModel)]="selectedCust.email"></p>
+<p>Website: <input class="form-control" [(ngModel)]="selectedCust.website"></p>
+<p>City: <input class="form-control" [(ngModel)]="selectedCust.city"></p>
+<p>Birth Date: <input class="form-control" [(ngModel)]="selectedCust.birthdate"></p>
+<p>Credits: <input class="form-control" [(ngModel)]="selectedCust.credits"></p>
+<button class="btn btn-default" (click)='this.router.navigate(["/customers"])'>Back to list</button>
+<button class="btn btn-default" (click)='addCustomer()'>Create new cutomer</button>

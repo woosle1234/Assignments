@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Projects (list of 30)</h1>
+  <p>Click a row to view the project details</p>
+  <table >
+    <tr>
+      <th>Project Name</th>
+      <th>Start Date</th>
+    </tr>
+    <tr *ngFor="let p of proj" (click)="select(e)">
+      <td>{{p.ProjectName}}</td>
+      <td>{{ p.ProjectStartDate | date:'EEEE, LLLL dd, yyyy' }}</td>
+    </tr>
+  </table>
+</div>

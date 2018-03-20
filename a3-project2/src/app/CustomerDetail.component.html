@@ -1,0 +1,30 @@
+<dl>
+
+      <dt>id</dt>
+      <dd>{{ c.id }}</dd>
+
+      <dt>First Name</dt>
+      <dd>{{ c.first_name }}</dd>
+
+      <dt>Last Name</dt>
+      <dd>{{ c.last_name }}</dd>
+
+      <dt>Email</dt>
+      <dd>{{ c.email }}</dd>
+
+      <dt>Website</dt>
+      <dd>{{ c.website }}</dd>
+
+        <dt>Birthdate</dt>
+        <dd>{{ c.birthdate }}</dd>
+
+          <dt>City</dt>
+          <dd>{{ c.city }}</dd>
+
+            <dt>Credits</dt>
+            <dd>{{ c.credits }}</dd>
+
+  </dl>
+<button class="btn btn-default" (click)='this.router.navigate(["/customers"])'>Back to list</button>
+<button class="btn btn-default" (click)='this.router.navigate(["/customeredit",c])'>Edit Customer</button>
+<button class="btn btn-default" (click)='delete()'>Delete Customer</button>
